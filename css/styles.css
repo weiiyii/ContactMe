@@ -14,18 +14,18 @@ body
 
 #loginDiv
 {
-    font-size: 30px;
-    width: 75%;
-    padding: 25px;
-    background-color: #b2b2b2;
+  font-size: 30px;
+  width: 75%;
+  padding: 25px;
+  background-color: #b2b2b2;
 }
 
 #loggedInDiv
 {
-    font-size: 30px;
-    width: 70%;
-    padding: 25px;
-    background-color: #b2b2b2;
+  font-size: 30px;
+  width: 75%;
+  padding: 25px;
+  background-color: #b2b2b2;
 }
 
 #accessUIDiv
