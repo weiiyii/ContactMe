@@ -1,6 +1,9 @@
 body
 {
-    background-color: #707070;
+    background-image: url(../images/white_office.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #title
@@ -15,9 +18,10 @@ body
 #loginDiv
 {
   font-size: 30px;
-  width: 75%;
+  width: 50%;
   padding: 25px;
   background-color: #b2b2b2;
+  opacity: 0.7;
 }
 
 #loggedInDiv
@@ -44,6 +48,8 @@ body
     font-size:12px;
     text-align: center;
 }
+
+
 
 
 .buttons:hover{

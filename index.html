@@ -15,18 +15,24 @@
   <link href="css/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
+
 <body>
+	<div class="container-fluid vertical-center">
+	<div class="container-fluid text-center" id="loginDiv">
+	
+		<h3 class="h3 mb-3">Login</h3>
+		<!-- <span id="inner-title">Login</span> -->
 
-<h1 id="title">ContactMe</h1>
-<div class="container-fluid vertical-center">
-<div class="container-fluid text-center" id="loginDiv">
-	<span id="inner-title">Log In</span>
-	<input type="text" id="loginName" placeholder="Username" /><br />
-	<input type="password" id="loginPassword" placeholder="Password"/><br />
-	<button type="button" id="loginButton" class="btn btn-primary" onclick="doLogin();"> Login </button>
-	<span id="loginResult"></span>
-</div>
-</div>
+		<form class="loginForm">
+			<input type="text" id="loginName" placeholder="Username" /><br />
+			<input type="password" id="loginPassword" placeholder="Password"/><br />
+			<button class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="button" onclick="doLogin();">Login</button>
+		<!-- <span id="loginResult"></span> -->
+		</form>
+		<a href="register.html" style="font-size:15px; color: rgb(56, 53, 53)">Register Now</a>
+	</div>
+	</div>
+	
+	</body>
 
-</body>
 </html>
