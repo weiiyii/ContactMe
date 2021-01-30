@@ -24,6 +24,20 @@ body
   opacity: 0.8;
 }
 
+#registerDiv
+{
+  /* font-size: 30px; */
+  width: 50%;
+  padding: 25px;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+}
+/* 
+.registerForm{
+    width: 50%;
+    display: inline-block;
+} */
+
 #loggedInDiv
 {
   font-size: 30px;
@@ -49,9 +63,6 @@ body
     text-align: center;
 }
 
-
-
-
 .buttons:hover{
     background-color: #00d5124f;
     color: #FFFFFF;
@@ -66,11 +77,15 @@ body
   align-items: center;
 }
 
-#loginName
+/* #loginName
 {
 	font-size: 30px;
 }
 #loginPassword
+{
+	font-size: 30px;
+}
+#loginEmail
 {
 	font-size: 30px;
 }
@@ -81,13 +96,13 @@ body
 #colorText
 {
 	font-size: 30px;
-}
+} */
 
-input[type="text"],input[type="password"]{
-    border-radius: 25px;
+input[type="text"],input[type="password"], input[type="email"]{
+    /* border-radius: 25px; */
     text-align: center;
-    width: 80%;
-    margin-bottom: 2%;
+    width: 100%;
+    margin-bottom: 3%;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -112,12 +127,12 @@ input[type="text"],input[type="password"]{
     color: #95060a;
 }
 
-#userName{
+/* #userName{
     display: inline-block;
     width: 80%;
     margin-left: 10%;
     text-align: center;
-}
+} */
 
 #Loginbutton{
   width:100px;
