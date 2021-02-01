@@ -24,8 +24,17 @@
 		<!-- <span id="inner-title">Login</span> -->
 
 		<form class="loginForm">
-			<input type="text" id="loginName" placeholder="Username" /><br />
-			<input type="password" id="loginPassword" placeholder="Password"/><br />
+			<div class="row">
+				<div class="col">
+					<input type="text" class="form-control" id="loginName" placeholder="Login">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<input type="password" class="form-control" id="loginPassword" placeholder="Password">
+				</div>
+			</div>
+			
 			<button class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="button" onclick="doLogin();">Login</button>
 		<!-- <span id="loginResult"></span> -->
 		</form>

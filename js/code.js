@@ -52,6 +52,37 @@ function doLogin()
 
 }
 
+function doRegister()
+{
+	var fname = document.getElementById("fname").value;
+	var lname = document.getElementById("lname").value;
+	var phone = document.getElementById("phone").value;
+	var login = document.getElementById("registerLogin").value;
+	var password = document.getElementById("registerPassword").value;
+
+	var jsonPayload = '{"fname" : "' + fname + '", "lname" : "' + lname + '", "phone" : "' + phone + '", "login" : "' + login + '", "password" : "' + password + '"}';
+
+	var url = urlBase + '/Register.' + extension;
+
+	var xhr = new XMLHttpRequest();
+	
+	// false: check login/phone number duplication?
+	xhr.open("POST", url, false);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	
+	xhr.send(jsonPayload);
+
+	var jsonObject = JSON.parse(xhr.responseText);
+
+	// valid creation
+	
+	// else
+
+
+
+
+}
+
 function saveCookie()
 {
 	var minutes = 20;
