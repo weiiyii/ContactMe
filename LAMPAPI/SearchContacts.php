@@ -23,7 +23,7 @@
 					$searchResults .= ",";
 				}
 				$searchCount++;
-				$searchResults .= '"' . $result . '"';
+				$searchResults .= '"' . $row . '"';
 			}
 		}
 		else
