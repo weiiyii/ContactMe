@@ -43,7 +43,7 @@ function doLogin()
 
 		saveCookie();
 
-		window.location.href = "color.html";
+		window.location.href = "Search.html";
 	}
 	catch(err)
 	{
@@ -74,7 +74,7 @@ function doRegister()
 	// valid creation
 	try{
 		xhr.send(jsonPayload);
-			
+
 		var jsonObject = JSON.parse(xhr.responseText);
 
 		userId = jsonObject.id;
