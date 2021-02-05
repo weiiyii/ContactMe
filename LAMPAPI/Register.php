@@ -17,7 +17,7 @@
 	$lname = $inData["lname"];
 	$phone = $inData["phone"];
 	$login = $inData["login"];
-	$pass = md5($inData["password"]);
+	$pass = $inData["password"];
 	
 	// initialize a variable to connect this script to the mySQL database
 	$conn = new mysqli("localhost", "Admin", "admin123", "COP4331");
