@@ -1,18 +1,18 @@
 <?php
 
 	$inData = getRequestInfo();
-	
+
 	$searchResults = "";
 	$searchCount = 0;
 
 	$conn = new mysqli("localhost", "Admin", "admin123", "COP4331");
-	if ($conn->connect_error) 
+	if ($conn->connect_error)
 	{
 		returnWithError( $conn->connect_error );
-	} 
+	}
 	else
 	{
-		$sql = "SELECT ID FROM ContactInfo WHERE FirstName or LastName or Email or Number like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+		$sql = "SELECT * FROM ContactInfo WHERE FirstName or LastName or Email or Number like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0)
 		{
@@ -45,17 +45,17 @@
 		header('Content-type: application/json');
 		echo $obj;
 	}
-	
+
 	function returnWithError( $err )
 	{
 		$retValue = '{"id":0,"firstName":"","lastName":"","error":"' . $err . '"}';
 		sendResultInfoAsJson( $retValue );
 	}
-	
+
 	function returnWithInfo( $searchResults )
 	{
 		$retValue = '{"results":[' . $searchResults . '],"error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
-	
+
 ?>
