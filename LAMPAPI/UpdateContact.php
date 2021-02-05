@@ -1,7 +1,7 @@
 <?php
 	$inData = getRequestInfo();
 	
-	$id = $inData["ID"];
+	$ID = $inData["ID"];
 	$FirstName = $inData["FirstName"];
 	$LastName = $inData["LastName"];
 	$Email = $inData["Email"];
@@ -15,7 +15,7 @@
 	} 
 	else
 	{
-		$sql = "UPDATE ContactInfo (ID,FirstName,LastName,Email,PhoneNumber,UserId) VALUES (" . $id . ",'" . $FirstName . ",'" . $LastName . ",'" . $Email . ",'" . $PhoneNumber . ",'" . $UserId . "')";
+		$sql = "UPDATE ContactInfo (ID,FirstName,LastName,Email,PhoneNumber,UserId) VALUES (" . $ID . ",'" . $FirstName . ",'" . $LastName . ",'" . $Email . ",'" . $PhoneNumber . ",'" . $UserId . "')";
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
