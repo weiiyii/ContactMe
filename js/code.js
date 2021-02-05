@@ -193,7 +193,7 @@ function SearchContacts()
 				var jsonObject = JSON.parse( xhr.responseText );
 
 				colorList = jsonObject.results
-						colorList[i][i] += "<br />\r\n";
+						colorList += "<br />\r\n";
 
 
 				document.getElementsByTagName("p")[0].innerHTML = colorList;
