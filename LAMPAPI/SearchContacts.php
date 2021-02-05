@@ -12,7 +12,7 @@
 	} 
 	else
 	{
-		$sql = "SELECT * FROM ContactInfo WHERE FirstName or LastName or Email or PhoneNumber like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+		$sql = "SELECT ID FROM ContactInfo WHERE FirstName or LastName or Email or Number like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0)
 		{
@@ -23,7 +23,7 @@
 					$searchResults .= ",";
 				}
 				$searchCount++;
-				$searchResults .= '"' . $row["Name"] . '"';
+				$searchResults .= '"' . $row["ID"] . '"';
 			}
 		}
 		else
