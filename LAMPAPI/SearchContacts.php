@@ -12,7 +12,7 @@
 	}
 	else
 	{
-		$sql = "SELECT FirstName FROM ContactInfo WHERE FirstName or LastName or Email or Number like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+		$sql = "SELECT FirstName FROM ContactInfo WHERE FirstName or LastName or Email or Number like '%" . $inData["search"] . "%';
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0)
 		{
