@@ -192,8 +192,14 @@ function SearchContacts()
 				document.getElementById("colorSearchResult").innerHTML = "Color(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
 
-
-					colorList = jsonObject.results;
+				for( var i=0; i<jsonObject.results.length; i++ )
+				{
+					colorList += jsonObject.results[i];
+					if( i < jsonObject.results.length - 1 )
+					{
+						colorList += "<br />\r\n";
+					}
+				}
 
 				document.getElementsByTagName("p")[0].innerHTML = colorList;
 			}
