@@ -23,7 +23,7 @@
 					$searchResults .= ",";
 				}
 				$searchCount++;
-				$searchResults .= '"' . $row["Email"] . '"';
+				$searchResults .= '"' . $result . '"';
 			}
 		}
 		else
