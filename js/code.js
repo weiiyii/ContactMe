@@ -170,7 +170,7 @@ function addColor()
 
 }
 
-function searchColor()
+function SearchContacts()
 {
 	var srch = document.getElementById("searchText").value;
 	document.getElementById("colorSearchResult").innerHTML = "";
@@ -178,7 +178,7 @@ function searchColor()
 	var colorList = "";
 
 	var jsonPayload = '{"search" : "' + srch + '","userId" : ' + userId + '}';
-	var url = urlBase + '/SearchColors.' + extension;
+	var url = urlBase + '/SearchContacts.' + extension;
 
 	var xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
