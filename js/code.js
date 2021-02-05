@@ -197,7 +197,7 @@ function SearchContacts()
 					colorList += jsonObject.results[i];
 					if( i < jsonObject.results.length - 1 )
 					{
-						colorList[i] += "<br />\r\n";
+						colorList[i][i] += "<br />\r\n";
 					}
 				}
 
