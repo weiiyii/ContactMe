@@ -15,7 +15,7 @@
 	} 
 	else
 	{
-		$sql = "DELETE FROM ContactInfo (ID, FirstName, LastName, Email, PhoneNumber, UserID) VALUES (" . $ID . ",'" . $FirstName . ",'" . $LastName . ",'" . $Email . ",'" . $PhoneNumber . ",'" . $UserID . "')";
+		$sql = "DELETE FROM ContactInfo (ID, FirstName, LastName, Email, PhoneNumber, UserID) VALUES (" . $ID . ",'" . $FirstName . "','" . $LastName . "','" . $Email . "','" . $PhoneNumber . "','" . $UserID . "')";
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
