@@ -6,7 +6,7 @@
 	$LastName = $inData["LastName"];
 	$Email = $inData["Email"];
 	$PhoneNumber = $inData["PhoneNumber"];
-	$UserId = $inData["UserId"];
+	$UserID = $inData["UserID"];
 	
 	$conn = new mysqli("localhost", "Admin", "admin123", "COP4331");
 	if ($conn->connect_error) 
@@ -15,7 +15,7 @@
 	} 
 	else
 	{
-		$sql = "DELETE FROM ContactInfo (ID, FirstName, LastName, Email, PhoneNumber, UserId) VALUES (" . $ID . ",'" . $FirstName . ",'" . $LastName . ",'" . $Email . ",'" . $PhoneNumber . ",'" . $UserId . "')";
+		$sql = "DELETE FROM ContactInfo (ID, FirstName, LastName, Email, PhoneNumber, UserID) VALUES (" . $ID . ",'" . $FirstName . ",'" . $LastName . ",'" . $Email . ",'" . $PhoneNumber . ",'" . $UserID . "')";
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
