@@ -73,11 +73,11 @@ function doRegister()
 
 	// valid creation
 	try{
-	xhr.send(jsonPayload);
+		xhr.send(jsonPayload);
+			
+		var jsonObject = JSON.parse(xhr.responseText);
 
-	var jsonObject = JSON.parse(xhr.responseText);
-
-	userId = jsonObject.id;
+		userId = jsonObject.id;
 
 	}
 
