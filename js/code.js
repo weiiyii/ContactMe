@@ -197,12 +197,16 @@ function SearchContacts()
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
 
-				contactList = jsonObject.results
-				newList = contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"];
+				for( var i=0; i<jsonObject.results.length; i++ ){
+				contactList += jsonObject.results[i];
+				if(i<jsonObject.results.length - 1){
+					contactList += "<br />\r\n";
+				}
+				/*newList = contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"];*/
 				/*newList += "<br />\r\n";*/
+			}
 
-
-				document.getElementsByTagName("p")[0].innerHTML = newList;
+				document.getElementsByTagName("p")[0].innerHTML = contactList;
 			}
 		};
 		xhr.send(jsonPayload);
