@@ -199,13 +199,12 @@ function SearchContacts()
 
 				for( var i=0; i<jsonObject.results.length; i++ ){
 				contactList += jsonObject.results[i];
-				newList = JSON.stringify(contactList);
 				if(i<jsonObject.results.length - 1){
-					newList += "<br />\r\n";
+					contactList += "<br />\r\n";
 				}
 			}
 
-				document.getElementsByTagName("p")[0].innerHTML = newList;
+				document.getElementsByTagName("p")[0].innerHTML = contactList;
 			}
 		};
 		xhr.send(jsonPayload);
