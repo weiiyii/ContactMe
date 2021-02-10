@@ -56,7 +56,7 @@
 				}
 				$conn->close();
 				break;
-				case "email":
+			case "email":
 					$sql = "SELECT Email FROM ContactInfo WHERE Email like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
 					$result = $conn->query($sql);
 					if ($result->num_rows > 0)
@@ -77,27 +77,6 @@
 					}
 					$conn->close();
 					break;
-					case "phoneNumber":
-						$sql = "SELECT Number FROM ContactInfo WHERE Number like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
-						$result = $conn->query($sql);
-						if ($result->num_rows > 0)
-						{
-							while($row = $result->fetch_assoc())
-							{
-								if( $searchCount > 0 )
-								{
-									$searchResults .= ",";
-								}
-								$searchCount++;
-								$searchResults .= '"' . $row . '"';
-							}
-						}
-						else
-						{
-							returnWithError( "No Records Found" );
-						}
-						$conn->close();
-						break;
 					default:
 						echo "Testing"
 	}
