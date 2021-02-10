@@ -198,7 +198,7 @@ function SearchContacts()
 				var jsonObject = JSON.parse( xhr.responseText );
 
 				contactList = jsonObject.results
-				newList = JSON.stringify(contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"]);
+				newList = contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"];
 				/*newList += "<br />\r\n";*/
 
 
