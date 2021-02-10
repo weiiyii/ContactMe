@@ -199,7 +199,7 @@ function SearchContacts()
 
 				contactList = jsonObject.results
 				newList = JSON.stringify(contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"]);
-						newList += "<br />\r\n";
+				/*newList += "<br />\r\n";*/
 
 
 				document.getElementsByTagName("p")[0].innerHTML = newList;
