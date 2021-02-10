@@ -150,7 +150,7 @@ function AddContacts()
 	var newPhone = document.getElementById("contactText_phone").value;
 	document.getElementById("contactAddResult").innerHTML = "";
 
-	var jsonPayload = '{"fname" : "' + newContact + '","lname" : "' + newContact + '","phone" : "' + newContact + '", "userId" : ' + userId + '}';
+	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "UserID" : ' + userId + '}';
 	var url = urlBase + '/AddColor.' + extension;
 
 	var xhr = new XMLHttpRequest();
