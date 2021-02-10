@@ -43,7 +43,7 @@ function doLogin()
 
 		saveCookie();
 
-		window.location.href = "search.html";
+		window.location.href = "landing.html";
 	}
 	catch(err)
 	{
