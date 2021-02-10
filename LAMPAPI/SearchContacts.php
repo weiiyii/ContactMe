@@ -13,7 +13,7 @@
 	}
 	else
 	{
-			$sql = "SELECT $searchType FROM ContactInfo WHERE $searchType like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+			$sql = "SELECT * FROM ContactInfo WHERE $searchType like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
 			$result = $conn->query($sql);
 				if ($result->num_rows > 0)
 				{
