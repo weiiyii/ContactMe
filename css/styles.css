@@ -32,7 +32,7 @@ body
   background-color: #FFFFFF;
   opacity: 0.8;
 }
-/* 
+/*
 .registerForm{
     width: 50%;
     display: inline-block;
@@ -41,9 +41,10 @@ body
 #loggedInDiv
 {
   font-size: 30px;
-  width: 75%;
+  width: 50%;
   padding: 25px;
-  background-color: #b2b2b2;
+  background-color: #FFFFFF;
+  opacity: 0.8;
 }
 
 #accessUIDiv
