@@ -199,7 +199,7 @@ function SearchContacts()
 
 				for( var i=0; i<jsonObject.results.length; i++ ){
 				contactList += jsonObject.results[i];
-				newList = JSON.stringify(contactList);
+				newList = JSON.stringify(contactList["FirstName"]);
 				if(i<jsonObject.results.length - 1){
 					newList += "<br />\r\n";
 				}
