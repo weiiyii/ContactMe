@@ -4,7 +4,7 @@
 
 	$searchResults = "";
 	$searchCount = 0;
-	$searchType = $inData['searchType'];
+	$searchType = $inData['searchT'];
 
 	$conn = new mysqli("localhost", "Admin", "admin123", "COP4331");
 	if ($conn->connect_error)
