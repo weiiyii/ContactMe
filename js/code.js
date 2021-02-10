@@ -199,11 +199,10 @@ function SearchContacts()
 
 				for( var i=0; i<jsonObject.results.length; i++ ){
 				contactList += jsonObject.results[i];
+				newList = contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"];
 				if(i<jsonObject.results.length - 1){
-					contactList += "<br />\r\n";
+					newList += "<br />\r\n";
 				}
-				/*newList = contactList["FirstName"]+contactList["LastName"]+contactList["Email"]+contactList["Number"];*/
-				/*newList += "<br />\r\n";*/
 			}
 
 				document.getElementsByTagName("p")[0].innerHTML = contactList;
