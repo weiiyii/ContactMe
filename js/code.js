@@ -151,7 +151,7 @@ function AddContacts()
 	document.getElementById("contactAddResult").innerHTML = "";
 
 	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "UserID" : ' + userId + '}';
-	var url = urlBase + '/AddColor.' + extension;
+	var url = urlBase + '/AddContacts.' + extension;
 
 	var xhr = new XMLHttpRequest();
 	xhr.open("POST", url, true);
@@ -162,7 +162,7 @@ function AddContacts()
 		{
 			if (this.readyState == 4 && this.status == 200)
 			{
-				document.getElementById("colorAddResult").innerHTML = "Color has been added";
+				document.getElementById("colorAddResult").innerHTML = "Contact has been added";
 			}
 		};
 		xhr.send(jsonPayload);
