@@ -177,7 +177,7 @@ function AddContacts()
 function SearchContacts()
 {
 	var srch = document.getElementById("searchText").value;
-	document.getElementById("colorSearchResult").innerHTML = "";
+	document.getElementById("contactSearchResult").innerHTML = "";
 	var srchType = document.getElementById("SearchT").value;
 
 	var contactList = "";
@@ -198,10 +198,11 @@ function SearchContacts()
 				var jsonObject = JSON.parse( xhr.responseText );
 
 				contactList = jsonObject.results
-						contactList += "<br />\r\n";
+				newList = JSON.stringify(contactList);
+						newList += "<br />\r\n";
 
 
-				document.getElementsByTagName("p")[0].innerHTML = contactList;
+				document.getElementsByTagName("p")[0].innerHTML = newList;
 			}
 		};
 		xhr.send(jsonPayload);
