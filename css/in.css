@@ -14,6 +14,11 @@ h6 {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.card {
+    background-color: #868e96;
+    color: #fff;
+}
+
 #mainNav {
     position: absolute;
     border-bottom: 1px solid #e9ecef;
