@@ -8,7 +8,7 @@
 	}
 	else
 	{
-		$sql = "INSERT into ContactInfo (ID, FirstName, LastName, Email, Number, UserID) VALUES ('" . $inData["FirstName"]. "', '" . $inData["LastName"] . "', '" . $inData["Email"] . "', '" . $inData["Number"] . "', '" . $inData["UserID"] . "')";
+		$sql = "insert into ContactInfo (FirstName, LastName, Email, Number, UserID) VALUES ('" . $inData["FirstName"]. "', '" . $inData["LastName"] . "', '" . $inData["Email"] . "', '" . $inData["Number"] . "', '" . $inData["UserID"] . "')";
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
