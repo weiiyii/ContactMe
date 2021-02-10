@@ -178,10 +178,11 @@ function SearchContacts()
 {
 	var srch = document.getElementById("searchText").value;
 	document.getElementById("colorSearchResult").innerHTML = "";
+	var srchType = document.getElementById("SearchT").value;
 
 	var contactList = "";
 
-	var jsonPayload = '{"search" : "' + srch + '","userId" : ' + userId + '}';
+	var jsonPayload = '{"search" : "' + srch + '","searchT" : "' + srchType + '","userId" : ' + userId + '}';
 	var url = urlBase + '/SearchContacts.' + extension;
 
 	var xhr = new XMLHttpRequest();

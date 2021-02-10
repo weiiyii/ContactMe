@@ -4,6 +4,7 @@
 
 	$searchResults = "";
 	$searchCount = 0;
+	$searchType = $inData['searchType'];
 
 	$conn = new mysqli("localhost", "Admin", "admin123", "COP4331");
 	if ($conn->connect_error)
@@ -12,25 +13,93 @@
 	}
 	else
 	{
-		$sql = "SELECT * FROM ContactInfo WHERE FirstName or LastName or Email like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
-		$result = $conn->query($sql);
-		if ($result->num_rows > 0)
-		{
-			while($row = $result->fetch_assoc())
-			{
-				if( $searchCount > 0 )
+		switch($searchType){
+			case "firstName":
+				$sql = "SELECT FirstName FROM ContactInfo WHERE FirstName like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+				$result = $conn->query($sql);
+				if ($result->num_rows > 0)
 				{
-					$searchResults .= ",";
+					while($row = $result->fetch_assoc())
+					{
+						if( $searchCount > 0 )
+						{
+							$searchResults .= ",";
+						}
+						$searchCount++;
+						$searchResults .= '"' . $row . '"';
+					}
 				}
-				$searchCount++;
-				$searchResults .= '"' . $row . '"';
-			}
-		}
-		else
-		{
-			returnWithError( "No Records Found" );
-		}
-		$conn->close();
+				else
+				{
+					returnWithError( "No Records Found" );
+				}
+				$conn->close();
+				break;
+			case "lastname":
+				$sql = "SELECT LastName FROM ContactInfo WHERE LastName like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+				$result = $conn->query($sql);
+				if ($result->num_rows > 0)
+				{
+					while($row = $result->fetch_assoc())
+					{
+						if( $searchCount > 0 )
+						{
+							$searchResults .= ",";
+						}
+						$searchCount++;
+						$searchResults .= '"' . $row . '"';
+					}
+				}
+				else
+				{
+					returnWithError( "No Records Found" );
+				}
+				$conn->close();
+				break;
+				case "email":
+					$sql = "SELECT Email FROM ContactInfo WHERE Email like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+					$result = $conn->query($sql);
+					if ($result->num_rows > 0)
+					{
+						while($row = $result->fetch_assoc())
+						{
+							if( $searchCount > 0 )
+							{
+								$searchResults .= ",";
+							}
+							$searchCount++;
+							$searchResults .= '"' . $row . '"';
+						}
+					}
+					else
+					{
+						returnWithError( "No Records Found" );
+					}
+					$conn->close();
+					break;
+					case "phoneNumber":
+						$sql = "SELECT Number FROM ContactInfo WHERE Number like '%" . $inData["search"] . "%' and UserID=" . $inData["userId"];
+						$result = $conn->query($sql);
+						if ($result->num_rows > 0)
+						{
+							while($row = $result->fetch_assoc())
+							{
+								if( $searchCount > 0 )
+								{
+									$searchResults .= ",";
+								}
+								$searchCount++;
+								$searchResults .= '"' . $row . '"';
+							}
+						}
+						else
+						{
+							returnWithError( "No Records Found" );
+						}
+						$conn->close();
+						break;
+					default:
+						echo "Testing"
 	}
 
 	returnWithInfo( $searchResults );
