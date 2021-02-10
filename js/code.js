@@ -142,12 +142,15 @@ function doLogout()
 	window.location.href = "index.html";
 }
 
-function addColor()
+function AddContacts()
 {
-	var newColor = document.getElementById("colorText").value;
-	document.getElementById("colorAddResult").innerHTML = "";
+	var newFname = document.getElementById("contactText_fname").value;
+	var newLname = document.getElementById("contactText_lname").value;
+	var newEmail = document.getElementById("contactText_email").value;
+	var newPhone = document.getElementById("contactText_phone").value;
+	document.getElementById("contactAddResult").innerHTML = "";
 
-	var jsonPayload = '{"color" : "' + newColor + '", "userId" : ' + userId + '}';
+	var jsonPayload = '{"fname" : "' + newContact + '","lname" : "' + newContact + '","phone" : "' + newContact + '", "userId" : ' + userId + '}';
 	var url = urlBase + '/AddColor.' + extension;
 
 	var xhr = new XMLHttpRequest();
