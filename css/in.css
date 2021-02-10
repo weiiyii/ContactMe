@@ -15,7 +15,7 @@ h6 {
 }
 
 .card {
-    opacity: 70%;
+    width: 18rem;
     background-color: #212529;
     color: #fff;
 }
