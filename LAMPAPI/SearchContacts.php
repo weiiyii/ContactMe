@@ -24,7 +24,7 @@
 							$searchResults .= ",";
 						}
 						$searchCount++;
-						$searchResults .= '"' . $row . '"';
+						$searchResults .= '"' . $row[$searchType] . '"';
 					}
 				}
 				else
