@@ -15,15 +15,22 @@ h6 {
 }
 
 .card {
-    justify-content: center;
+    text-align: center;
+    /* justify-content: center; */
     width: 25rem;
-    background-color: #212529;
+    background-color: rgb(241, 97, 14);
+    /* background-color: #f56f5e; */
     color: #fff;
+    opacity: 60%;
+    border-radius: 50px;
 }
 
-#menuDiv {
+/* #menuDiv {
   display: flex;
-}
+  align-items: center;
+  justify-content: center;
+  
+} */
 
 #mainNav {
     position: absolute;
@@ -131,6 +138,7 @@ h6 {
   header.masthead .site-heading {
     padding: 200px 0 150px;
     color: white;
+    position: relative;
   }
   
   @media only screen and (min-width: 768px) {
