@@ -143,7 +143,7 @@ function doLogout()
 }
 
 function doDelete(row){
-	var jsonPayload = '{"ID" : "' + row + '}';
+	var jsonPayload = '{"ID" : "' + row + '","UserID" : ' + userId + '}';
 	var url = urlBase + '/DeleteContact.' + extension;
 
 	var xhr = new XMLHttpRequest();

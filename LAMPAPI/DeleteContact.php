@@ -1,7 +1,6 @@
 <?php
 	$inData = getRequestInfo();
 
-	$ID = $inData["ID"];
 
 	$conn = new mysqli("localhost", "Admin", "admin123", "COP4331");
 	if ($conn->connect_error)
@@ -10,7 +9,7 @@
 	}
 	else
 	{
-		$sql = "DELETE FROM ContactInfo WHERE ID = $ID";
+		$sql = 'DELETE FROM ContactInfo WHERE ID =" . $inData["ID"]" and UserID=" . $inData["UserID"]"';
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
