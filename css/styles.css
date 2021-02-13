@@ -168,3 +168,6 @@ select{
     font-family: 'Ubuntu', sans-serif;
     color: #95060a;
 }
+.col-1-2{
+  width: 4%;
+}
