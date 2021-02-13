@@ -196,14 +196,14 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += "<tr>\n<td>"+jsonObject.results[0]+"</td>";
+				contactList += "<tbody><tr>\n<td>"+jsonObject.results[0]+"</td>";
 				for( var i=1; i<jsonObject.results.length; i++ ){
 				contactList += "<td>"+jsonObject.results[i]+"</td>";
 				if(i%4==0){
 					contactList += "</tr>\r\n";
 				}
 				if(i<jsonObject.results.length - 1){
-					contactList += "<br />\r\n";
+					contactList += "</tbody>\r\n";
 				}
 			}
 
