@@ -22,9 +22,7 @@
 <div class="container-fluid vertical-center">
 <div class="container-fluid text-center" id="loggedInDiv">
 	<span id="userName"></span><br />
-	<button type="button" id="logoutButton" class="buttons" onclick="doLogout();"> Log Out </button>
-
-	<br />
+	<button type="button" id="logoutButton" class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doLogout();"> Log Out </button>
 
 	<input type="text" id="searchText" placeholder="Contact To Search For"/>
 	<select name="SerachType" id="SearchT">
@@ -33,7 +31,7 @@
     <option value="Email">Email</option>
     <option value="Number">Phone Number</option>
   </select>
-	<button type="button" id="searchColorButton" class="buttons" onclick="SearchContacts();"> Search Contact </button><br />
+	<button type="button" id="searchColorButton" class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="SearchContacts();"> Search Contact </button>
 	<span id="contactSearchResult"></span>
 	<table id="contactList">
 	</table><br /><br />
