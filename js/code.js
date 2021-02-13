@@ -196,9 +196,10 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += `<tr>\n<td>${jsonObject.results[1]}</td>`;
-				for( var i=2; i<jsonObject.results.length; i++ ){
+				contactList += `<tr>\n<td>${jsonObject.results[0]}</td>`;
+				for( var i=1; i<jsonObject.results.length; i++ ){
 					if(i%5==0){
+						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>"`;
 						contactList += "</tr>\r\n";
 					}
 				contactList += `<td>${jsonObject.results[i]}</td>`;
