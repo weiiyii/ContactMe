@@ -202,7 +202,9 @@ function SearchContacts()
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>"`;
 						contactList += "</tr>\r\n";
 					}
-				contactList += `<td>${jsonObject.results[i]}</td>`;
+					else{
+						contactList += `<td>${jsonObject.results[i]}</td>`;
+						}
 				if(i == jsonObject.results.length){
 					contactList += "</tbody>\r\n";
 				}
