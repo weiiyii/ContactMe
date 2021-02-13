@@ -33,16 +33,16 @@
     <option value="Email">Email</option>
     <option value="Number">Phone Number</option>
   </select>
-	<button type="button" id="searchColorButton" class="buttons" onclick="SearchContacts();"> Search Color </button><br />
+	<button type="button" id="searchColorButton" class="buttons" onclick="SearchContacts();"> Search Contact </button><br />
 	<span id="contactSearchResult"></span>
 	<table id="contactList">
 	</table><br /><br />
 
-	<input type="text" id="contactText_fname" placeholder="First Name">
-	<input type="text" id="contactText_lname" placeholder="Last Name">
-	<input type="text" id="contactText_email" placeholder="Email">
-	<input type="text" id="contactText_phone" placeholder="Phone Number">
-	<button type="button" id="addColorButton" class="buttons" onclick="AddContacts();"> Add Contact </button><br />
+	<input type="text" id="contactText_fname" placeholder="First Name" required>
+	<input type="text" id="contactText_lname" placeholder="Last Name"required>
+	<input type="text" id="contactText_email" placeholder="Email"required>
+	<input type="text" id="contactText_phone" placeholder="Phone Number"required>
+	<button type="button" id="addContactButton" class="buttons" onclick="AddContacts();"> Add Contact </button><br />
 	<span id="contactAddResult"></span>
 </div>
 </div>
