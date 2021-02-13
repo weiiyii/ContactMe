@@ -198,7 +198,7 @@ function SearchContacts()
 				var jsonObject = JSON.parse( xhr.responseText );
 				contactList += `<tr>\n<td>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
-					if(i+1%5==0){
+					if((i+1)%5==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>"`;
 						contactList += "</tr>\r\n";
 					}
