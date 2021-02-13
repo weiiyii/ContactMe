@@ -207,7 +207,7 @@ function SearchContacts()
 				}
 			}
 
-				document.getElementsByTagName("p")[0].innerHTML = contactList;
+				document.getElementsByTagName("table")[0].innerHTML = contactList;
 			}
 		};
 		xhr.send(jsonPayload);
