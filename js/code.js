@@ -199,7 +199,7 @@ function SearchContacts()
 				contactList += `<tbody><tr>\n<td>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
 				contactList += `<td>${jsonObject.results[i]}</td>`;
-				if(i%4==0){
+				if(i%3==0){
 					contactList += "</tr>\r\n";
 				}
 				if(i == jsonObject.results.length){
