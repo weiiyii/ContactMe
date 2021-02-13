@@ -1,4 +1,4 @@
-var urlBase = 'http://138.197.107.203/LAMPAPI';
+var urlBase = 'http://www.instacontact.live/LAMPAPI';
 var extension = 'php';
 
 var userId = 0;
