@@ -142,6 +142,30 @@ function doLogout()
 	window.location.href = "index.html";
 }
 
+function doDelete(row){
+	var jsonPayload = '{"ID" : "' + row + '}';
+	var url = urlBase + '/DeleteContact.' + extension;
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	try
+	{
+		xhr.onreadystatechange = function()
+		{
+			if (this.readyState == 4 && this.status == 200)
+			{
+				document.getElementById("contactAddResult").innerHTML = "Contact has been Deleted";
+			}
+		};
+		xhr.send(jsonPayload);
+	}
+	catch(err)
+	{
+		document.getElementById("contactAddResult").innerHTML = err.message;
+	}
+}
+
 function AddContacts()
 {
 	var newFname = document.getElementById("contactText_fname").value;
