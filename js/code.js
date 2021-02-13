@@ -155,14 +155,14 @@ function doDelete(row){
 		{
 			if (this.readyState == 4 && this.status == 200)
 			{
-				document.getElementById("contactAddResult").innerHTML = "Contact has been Deleted";
+				document.getElementById("contactDelUpResult").innerHTML = "Contact has been Deleted";
 			}
 		};
 		xhr.send(jsonPayload);
 	}
 	catch(err)
 	{
-		document.getElementById("contactAddResult").innerHTML = err.message;
+		document.getElementById("contactDelUpResult").innerHTML = err.message;
 	}
 }
 
@@ -186,7 +186,7 @@ function AddContacts()
 		{
 			if (this.readyState == 4 && this.status == 200)
 			{
-				document.getElementById("contactDelUpResult").innerHTML = "Contact has been added";
+				document.getElementById("contactAddResult").innerHTML = "Contact has been added";
 			}
 		};
 		xhr.send(jsonPayload);
