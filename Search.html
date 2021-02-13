@@ -28,13 +28,14 @@
 	<div class="col-3">
 		<div class="card h-100">
 			<div class="card-body">
-	<input type="text" id="searchText" placeholder="Contact To Search For"/>
+				<h4 class="card-title">Search</h4>
 	<select name="SerachType" id="SearchT">
     <option value="FirstName">First Name</option>
     <option value="LastName">Last Name</option>
     <option value="Email">Email</option>
     <option value="Number">Phone Number</option>
   </select>
+	<input type="text" id="searchText" placeholder="Contact To Search For"/>
 	<button type="button" id="searchColorButton" class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="SearchContacts();"> Search Contact </button>
 	<span id="contactSearchResult"></span>
 	<table id="contactList">
@@ -47,6 +48,7 @@
 		<div class="card h-100">
 				<!-- <img class="card-img-top" src="images/blue_water.jpg" alt=""> -->
 				<div class="card-body">
+					<h4 class="card-title">Add</h4>
 
 	<input type="text" id="contactText_fname" placeholder="First Name" required>
 	<input type="text" id="contactText_lname" placeholder="Last Name" required>
