@@ -9,7 +9,7 @@
 	}
 	else
 	{
-		$sql = 'DELETE FROM ContactInfo WHERE ID =" . $inData["ID"]" and UserID=" . $inData["UserID"]"';
+		$sql = "DELETE FROM ContactInfo WHERE ID =" . $inData["ID"]" and UserID=" . $inData["UserID"]"";
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
