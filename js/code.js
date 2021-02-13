@@ -229,10 +229,8 @@ function SearchContacts()
 					else{
 						contactList += `<td>${jsonObject.results[i]}</td>`;
 						}
-				if(i == jsonObject.results.length){
-					contactList += "</tbody>\r\n";
-				}
 			}
+			contactList += "</tbody>\r\n";
 
 				document.getElementsByTagName("table")[0].innerHTML = contactList;
 			}
