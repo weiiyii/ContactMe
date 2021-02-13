@@ -198,10 +198,10 @@ function SearchContacts()
 				var jsonObject = JSON.parse( xhr.responseText );
 				contactList += `<tbody><tr>\n<td>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
+					if(i%4==0){
+						contactList += "</tr>\r\n";
+					}
 				contactList += `<td>${jsonObject.results[i]}</td>`;
-				if(i%4==0){
-					contactList += "</tr>\r\n";
-				}
 				if(i == jsonObject.results.length){
 					contactList += "</tbody>\r\n";
 				}
