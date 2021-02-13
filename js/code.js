@@ -180,7 +180,7 @@ function SearchContacts()
 	document.getElementById("contactSearchResult").innerHTML = "";
 	var srchType = document.getElementById("SearchT").value;
 
-	var contactList = "";
+	var contactList = "<tbody><tr>\n<td>First</td>\n<td>Last</td>\n<td>Email</td>\n<td>Number</td>\n</tr>\r\n";
 
 	var jsonPayload = '{"search" : "' + srch + '","searchT" : "' + srchType + '","userId" : ' + userId + '}';
 	var url = urlBase + '/SearchContacts.' + extension;
@@ -196,7 +196,7 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += `<tbody><tr>\n<td>${jsonObject.results[0]}</td>`;
+				contactList += `<tr>\n<td>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if(i%4==0){
 						contactList += "</tr>\r\n";
