@@ -227,7 +227,7 @@ function SearchContacts()
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
-						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${i+2/6});"> Update </button></td>`;
+						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${(i+1)/6});"> Update </button></td>`;
 						contactList += `</tr>\r\n`;
 					}
 					else if((i+2)%6==0){
