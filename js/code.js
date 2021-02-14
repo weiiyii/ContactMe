@@ -208,7 +208,7 @@ function SearchContacts()
 	document.getElementById("contactSearchResult").innerHTML = "";
 	var srchType = document.getElementById("SearchT").value;
 
-	var contactList = "<tbody><tr>\n<td>First</td>\n<td>Last</td>\n<td>Email</td>\n<td>Number</td>\n<td>Delete</td>\n</tr>\r\n";
+	var contactList = "<thead><tr>\n<th>First</th>\n<th>Last</th>\n<th>Email</th>\n<th>Number</th>\n<th>Delete</th>\n</tr>\r\n";
 
 	var jsonPayload = '{"search" : "' + srch + '","searchT" : "' + srchType + '","userId" : ' + userId + '}';
 	var url = urlBase + '/SearchContacts.' + extension;
