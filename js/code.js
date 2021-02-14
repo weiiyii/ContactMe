@@ -227,7 +227,7 @@ function SearchContacts()
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
-						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${(i+1)/6});"> Update </button></td>`;
+						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${()(i+1)/6)-1});"> Update </button></td>`;
 						contactList += `</tr>\r\n`;
 					}
 					else if((i+2)%6==0){
@@ -251,6 +251,34 @@ function SearchContacts()
 
 }
 
-function updateContact(){
+function updateContact(php_row,row){
+	i = (row*6)
+	var newFname = document.getElementById(`td_${i}`).value;
+	var newLname = document.getElementById(`td_${i+1}`).value;
+	var newEmail = document.getElementById(`td_${i+2}`).value;
+	var newPhone = document.getElementById(`td_${i+3}`).value;
+	document.getElementById("contactSearchResult").innerHTML = "";
 
+	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "UserID" : ' + userId + '}';
+	var url = urlBase + '/UpdateContact.' + extension;
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	try
+	{
+		xhr.onreadystatechange = function()
+		{
+			if (this.readyState == 4 && this.status == 200)
+			{
+				document.getElementById("contactSearchResult").innerHTML = "Contact has been Updated";
+				SearchContacts();
+			}
+		};
+		xhr.send(jsonPayload);
+	}
+	catch(err)
+	{
+		document.getElementById("contactSearchResult").innerHTML = err.message;
+	}
 }
