@@ -342,26 +342,81 @@ h6 {
   .searchResult{
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+    -moz-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+    -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+  }
+
+  thead {
+    display: none;
   }
 
   tr{
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 16px;
+    float: left;
+    clear: both;
+
+    padding: 0 16px;
+    background: #f2f2f2;
+
+    box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+    -moz-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+    -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+
+    /*
     padding: 1rem 0.5rem 0.5rem 1rem;
     background-color: transparentize( white, 0.15 );
-    box-shadow: 0 0 1rem transparentize( black, 0.9 );
+    box-shadow: 0 0 1rem transparentize( black, 0.9 ); */
   }
 
   td {
-    display: inline-block;
-    margin: 0 0.5rem 0.5rem 0;
+    /* or inline block */
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(5, 57, 94, 1);
+    /* margin: 0 0.5rem 0.5rem 0;
     padding: 0.5rem;
     text-align: left;
     background-color: white;
-    border: 1px solid transparentize( #58C25F, 0.5 );
+    border: 1px solid transparentize( #58C25F, 0.5 ); */
   }
 
-  td:before {
+  /* fname, lname, delete, update */
+  #td_0, #td_1, #td_5, #td_6 {
+    content: attr("First Name");
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(5, 57, 94, .7);
+    float: left;
+    width: 50%;
+    /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
+    padding: 0.625rem 0.5rem 0.625rem;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: transparentize( #58C25F, 0.9 );
+    color: #58C25F; */
+  }
+
+  /* email, phone, date */
+  #td_2, #td_3, #td_4 {
+    content: attr("Email");
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(5, 57, 94, .7);
+    float: left;
+    width: 100%;
+    /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
+    padding: 0.625rem 0.5rem 0.625rem;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: transparentize( #58C25F, 0.9 );
+    color: #58C25F; */
+  }
+
+  /* td:nth-child(2) {
     float: left;
     margin: -0.5rem 0.5rem -0.5rem -0.5rem;
     padding: 0.625rem 0.5rem 0.625rem;
@@ -369,15 +424,5 @@ h6 {
     font-weight: bold;
     background: transparentize( #58C25F, 0.9 );
     color: #58C25F;
-  }
-
-  td:nth-child(2){
-    float: left;
-    margin: -0.5rem 0.5rem -0.5rem -0.5rem;
-    padding: 0.625rem 0.5rem 0.625rem;
-    font-size: 0.75em;
-    font-weight: bold;
-    background: transparentize( #58C25F, 0.9 );
-    color: #58C25F;
-  }
+  } */
 
