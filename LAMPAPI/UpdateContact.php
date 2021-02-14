@@ -15,7 +15,7 @@
 	}
 	else
 	{
-		$sql = "UPDATE ContactInfo SET FirstName=" ."'$FirstName'," ."LastName=" ."'$LastName'," ."Email=" . "'$Email'," ."Number=" ."'$Number'," ."WHERE ID=$ID";
+		$sql = "UPDATE ContactInfo SET FirstName={"$FirstName"}, LastName={"$LastName"}, Email={"$Email"}, Number={"$Number"} WHERE ID = $ID"
 		if( $result = $conn->query($sql) != TRUE )
 		{
 			returnWithError( $conn->error );
