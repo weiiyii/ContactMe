@@ -348,9 +348,9 @@ h6 {
     -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5); */
   }
 
-  thead {
+  /* thead {
     display: none;
-  }
+  } */
 
   tr{
     display: block;
