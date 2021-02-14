@@ -344,7 +344,7 @@ h6 {
     margin-right: auto;
   }
 
-  .searchResult tr{
+  tr{
     display: block;
     margin-bottom: 1.5rem;
     padding: 1rem 0.5rem 0.5rem 1rem;
@@ -352,7 +352,7 @@ h6 {
     box-shadow: 0 0 1rem transparentize( black, 0.9 );
   }
 
-  .searchResult td {
+  td {
     display: inline-block;
     margin: 0 0.5rem 0.5rem 0;
     padding: 0.5rem;
