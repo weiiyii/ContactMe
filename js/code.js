@@ -229,6 +229,9 @@ function SearchContacts()
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
 						contactList += "</tr>\r\n";
 					}
+					else if((i+1)%5==0){
+							contactList += `<td>${jsonObject.results[i]}</td>`;
+					}
 					else{
 						contactList += `<td contenteditable='true'>${jsonObject.results[i]}</td>`;
 						}
