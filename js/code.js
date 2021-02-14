@@ -227,13 +227,11 @@ function SearchContacts()
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
+						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]});"> Update </button></td>`;
+						contactList += "</tr>\r\n";
 					}
 					else if((i+1)%5==0){
 							contactList += `<td>${jsonObject.results[i]}</td>`;
-					}
-					else if((i+1)%7==0){
-						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i-1]});"> Update </button></td>`;
-							contactList += "</tr>\r\n";
 					}
 					else{
 						contactList += `<td contenteditable='true'>${jsonObject.results[i]}</td>`;
