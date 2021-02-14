@@ -230,7 +230,7 @@ function SearchContacts()
 						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]});"> Update </button></td>`;
 						contactList += "</tr>\r\n";
 					}
-					else if((i+1)%5==0){
+					else if((i+2)%6==0){
 							contactList += `<td>${jsonObject.results[i]}</td>`;
 					}
 					else{
