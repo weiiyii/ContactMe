@@ -223,12 +223,12 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += `<tr contenteditable='true' id="Table_Row_1">\n<td>${jsonObject.results[0]}</td>`;
+				contactList += `<tr id="Table_Row_1">\n<td contenteditable='true'>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
 						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]});"> Update </button></td>`;
-						contactList += "</tr>\r\n";
+						contactList += `</tr>\r\n<tr id="Table_Row_${(i/6)+1}"`;
 					}
 					else if((i+2)%6==0){
 							contactList += `<td>${jsonObject.results[i]}</td>`;
