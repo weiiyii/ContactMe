@@ -199,8 +199,11 @@ function AddContacts()
 
 }
 
+
+
 function SearchContacts()
 {
+
 	var srch = document.getElementById("searchText").value;
 	document.getElementById("contactSearchResult").innerHTML = "";
 	var srchType = document.getElementById("SearchT").value;
