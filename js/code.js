@@ -230,7 +230,7 @@ function SearchContacts()
 						contactList += "</tr>\r\n";
 					}
 					else{
-						contactList += `<td>${jsonObject.results[i]}</td>`;
+						contactList += `<td contenteditable='true'>${jsonObject.results[i]}</td>`;
 						}
 			}
 			contactList += "</tbody>\r\n";
@@ -244,5 +244,9 @@ function SearchContacts()
 	{
 		document.getElementById("contactSearchResult").innerHTML = err.message;
 	}
+
+}
+
+function updateContact(){
 
 }
