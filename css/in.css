@@ -386,36 +386,36 @@ h6 {
   }
 
   /* fname, lname, delete, update */
-  /* #td_0, #td_1, #td_5, #td_6 {
+  #td_0, #td_1, #td_5, #td_6 {
     content: attr("First Name");
     font-weight: 600;
     font-size: 12px;
     color: rgba(5, 57, 94, .7);
     float: left;
-    width: 50%; */
+    width: 50%;
     /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
     padding: 0.625rem 0.5rem 0.625rem;
     font-size: 0.75em;
     font-weight: bold;
     background: transparentize( #58C25F, 0.9 );
     color: #58C25F; */
-  /* } */
+  }
 
   /* email, phone, date */
-  /* #td_2, #td_3, #td_4 {
+  #td_2, #td_3, #td_4 {
     content: attr("Email");
     font-weight: 600;
     font-size: 12px;
     color: rgba(5, 57, 94, .7);
     float: left;
-    width: 100%; */
+    width: 100%;
     /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
     padding: 0.625rem 0.5rem 0.625rem;
     font-size: 0.75em;
     font-weight: bold;
     background: transparentize( #58C25F, 0.9 );
     color: #58C25F; */
-  /* } */
+  }
 
   /* td:nth-child(2) {
     float: left;
