@@ -207,7 +207,7 @@ function SearchContacts()
 	document.getElementById("contactSearchResult").innerHTML = "";
 	var srchType = document.getElementById("SearchT").value;
 
-	var contactList = "<thead><tr>\n<th>First</th>\n<th>Last</th>\n<th>Email</th>\n<th>Number</th>\n<th>Date Created</th>\n<th>Delete</th>\n<th>Update</th>\n</tr>\r\n";
+	var contactList = '<thead><tr id="Table_Row_0">\n<th>First</th>\n<th>Last</th>\n<th>Email</th>\n<th>Number</th>\n<th>Date Created</th>\n<th>Delete</th>\n<th>Update</th>\n</tr>\r\n';
 
 	var jsonPayload = '{"search" : "' + srch + '","searchT" : "' + srchType + '","userId" : ' + userId + '}';
 	var url = urlBase + '/SearchContacts.' + extension;
@@ -223,7 +223,7 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += `<tr>\n<td>${jsonObject.results[0]}</td>`;
+				contactList += `<tr contenteditable='true' id="Table_Row_1">\n<td>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
