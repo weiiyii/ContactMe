@@ -223,18 +223,18 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += `<tr id="Table_Row_1">\n<td contenteditable='true'>${jsonObject.results[0]}</td>`;
+				contactList += `<tr id="Table_Row_1">\n<td contenteditable='true' id = "td_0">${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
-						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]});"> Update </button></td>`;
-						contactList += `</tr>\r\n<tr id="Table_Row_${(i+1/6)+1}"`;
+						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${i+1/6});"> Update </button></td>`;
+						contactList += `</tr>\r\n`;
 					}
 					else if((i+2)%6==0){
 							contactList += `<td>${jsonObject.results[i]}</td>`;
 					}
 					else{
-						contactList += `<td contenteditable='true'>${jsonObject.results[i]}</td>`;
+						contactList += `<td contenteditable='true' id = "td_${i}">${jsonObject.results[i]}</td>`;
 						}
 			}
 			contactList += "</tbody>\r\n";
