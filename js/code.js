@@ -207,7 +207,7 @@ function SearchContacts()
 	document.getElementById("contactSearchResult").innerHTML = "";
 	var srchType = document.getElementById("SearchT").value;
 
-	var contactList = "<thead><tr>\n<th>First</th>\n<th>Last</th>\n<th>Email</th>\n<th>Number</th>\n<th>Date Created</th>\n<th>Delete</th>\n</tr>\r\n";
+	var contactList = "<thead><tr>\n<th>First</th>\n<th>Last</th>\n<th>Email</th>\n<th>Number</th>\n<th>Date Created</th>\n<th>Delete</th>\n<th>Update</th>\n</tr>\r\n";
 
 	var jsonPayload = '{"search" : "' + srch + '","searchT" : "' + srchType + '","userId" : ' + userId + '}';
 	var url = urlBase + '/SearchContacts.' + extension;
@@ -223,14 +223,17 @@ function SearchContacts()
 			{
 				document.getElementById("contactSearchResult").innerHTML = "Contact(s) has been retrieved";
 				var jsonObject = JSON.parse( xhr.responseText );
-				contactList += `<tr>\n<td>${jsonObject.results[0]}</td>`;
+				contactList += `<tr contenteditable='true' id=`0`>\n<td>${jsonObject.results[0]}</td>`;
 				for( var i=1; i<jsonObject.results.length; i++ ){
 					if((i+1)%6==0){
 						contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
-						contactList += "</tr>\r\n";
 					}
 					else if((i+1)%5==0){
 							contactList += `<td>${jsonObject.results[i]}</td>`;
+					}
+					else if((i+1)%7==0){
+						contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doUpdate(${jsonObject.results[i-1]});"> Update </button></td>`;
+						contactList += "</tr>\r\n";
 					}
 					else{
 						contactList += `<td contenteditable='true'>${jsonObject.results[i]}</td>`;
@@ -250,6 +253,33 @@ function SearchContacts()
 
 }
 
-function updateContact(){
+function updateContact(row){
+	var newFname = document.getElementById("contactText_fname").value;
+	var newLname = document.getElementById("contactText_lname").value;
+	var newEmail = document.getElementById("contactText_email").value;
+	var newPhone = document.getElementById("contactText_phone").value;
+	document.getElementById("contactAddResult").innerHTML = "";
+
+	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "UserID" : ' + userId + '}';
+	var url = urlBase + '/AddContacts.' + extension;
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", url, true);
+	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+	try
+	{
+		xhr.onreadystatechange = function()
+		{
+			if (this.readyState == 4 && this.status == 200)
+			{
+				document.getElementById("contactAddResult").innerHTML = "Contact has been added";
+			}
+		};
+		xhr.send(jsonPayload);
+	}
+	catch(err)
+	{
+		document.getElementById("contactAddResult").innerHTML = err.message;
+	}
 
 }
