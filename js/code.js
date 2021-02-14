@@ -259,7 +259,7 @@ function updateContact(php_row,row){
 	var newPhone = document.getElementById(`td_${i+3}`).value;
 	document.getElementById("contactSearchResult").innerHTML = "";
 
-	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "UserID" : ' + userId + '}';
+	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "ID" : ' + php_row + '}';
 	var url = urlBase + '/UpdateContact.' + extension;
 
 	var xhr = new XMLHttpRequest();
