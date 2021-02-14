@@ -29,7 +29,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 } */
 
 #mainNav {
@@ -38,12 +38,12 @@ h6 {
     background-color: white;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+
   #mainNav .navbar-brand {
     font-weight: 800;
     color: #343a40;
   }
-  
+
   #mainNav .navbar-toggler {
     font-size: 12px;
     font-weight: 800;
@@ -51,14 +51,14 @@ h6 {
     text-transform: uppercase;
     color: #343a40;
   }
-  
+
   #mainNav .navbar-nav > li.nav-item > a {
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  
+
   @media only screen and (min-width: 992px) {
     #mainNav {
       border-bottom: 1px solid transparent;
@@ -79,7 +79,7 @@ h6 {
       color: rgba(255, 255, 255, 0.8);
     }
   }
-  
+
   @media only screen and (min-width: 992px) {
     #mainNav {
       transition: background-color 0.2s;
@@ -122,7 +122,7 @@ h6 {
     position: relative;
     background-size: cover;
   }
-  
+
   header.masthead .overlay {
     position: absolute;
     top: 0;
@@ -132,7 +132,7 @@ h6 {
     background-color: #212529;
     opacity: 0.5;
   }
-  
+
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
@@ -140,7 +140,7 @@ h6 {
     color: white;
     position: relative;
   }
-  
+
   @media only screen and (min-width: 768px) {
     header.masthead .page-heading,
     header.masthead .post-heading,
@@ -148,18 +148,18 @@ h6 {
       padding: 200px 0;
     }
   }
-  
+
   header.masthead .page-heading,
   header.masthead .site-heading {
     text-align: center;
   }
-  
+
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
     font-size: 50px;
     margin-top: 0;
   }
-  
+
   header.masthead .page-heading .subheading,
   header.masthead .site-heading .subheading {
     font-size: 24px;
@@ -169,42 +169,42 @@ h6 {
     margin: 10px 0 0;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+
   @media only screen and (min-width: 768px) {
     header.masthead .page-heading h1,
     header.masthead .site-heading h1 {
       font-size: 80px;
     }
   }
-  
+
   header.masthead .post-heading h1 {
     font-size: 35px;
   }
-  
+
   header.masthead .post-heading .meta,
   header.masthead .post-heading .subheading {
     line-height: 1.1;
     display: block;
   }
-  
+
   header.masthead .post-heading .subheading {
     font-size: 24px;
     font-weight: 600;
     margin: 10px 0 30px;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+
   header.masthead .post-heading .meta {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
     font-family: 'Lora', 'Times New Roman', serif;
   }
-  
+
   header.masthead .post-heading .meta a {
     color: #fff;
   }
-  
+
   @media only screen and (min-width: 768px) {
     header.masthead .post-heading h1 {
       font-size: 55px;
@@ -222,18 +222,18 @@ h6 {
     list-style: none;
     font-family: 'Montserrat', sans-serif;
   }
-  
+
   body{
     background: #e4eefa;
   }
-  
+
   .wrapper{
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
   }
-  
+
   .wrapper .search_box{
     width: 500px;
     background: #fff;
@@ -249,8 +249,8 @@ h6 {
     border: transparent;
   }
 
-  #SearchT 
-  
+  #SearchT
+
   .wrapper .search_box .dropdown{
     width: 150px;
     /* border-right: 2px solid #dde2f1; */
@@ -258,13 +258,13 @@ h6 {
     position: relative;
     cursor: pointer;
   }
-  
+
   .wrapper .search_box .dropdown .default_option{
     text-transform: uppercase;
     padding: 13px 15px;
     font-size: 14px;
   }
-  
+
   .wrapper .search_box .dropdown ul{
     position: absolute;
     top: 70px;
@@ -276,23 +276,23 @@ h6 {
     display: none;
     box-shadow: 8px 8px 6px -10px #b3c6ff;
   }
-  
+
   .wrapper .search_box .dropdown ul.active{
     display: block;
   }
-  
+
   .wrapper .search_box .dropdown ul li{
     padding-bottom: 20px;
   }
-  
+
   .wrapper .search_box .dropdown ul li:last-child{
     padding-bottom: 0;
   }
-  
+
   .wrapper .search_box .dropdown ul li:hover{
     color: #6f768d;
   }
-  
+
   .wrapper .search_box .dropdown:before{
     content: "";
     position: absolute;
@@ -301,13 +301,13 @@ h6 {
     border: 8px solid;
     /* border-color: #5078ef transparent transparent transparent; */
   }
-  
+
   .wrapper .search_box .search_field{
     width: 350px;
     height: 100%;
     position: relative;
   }
-  
+
   .wrapper .search_box .search_field .input{
     width: 100%;
     height: 100%;
@@ -317,7 +317,7 @@ h6 {
     padding-right: 38px;
     color: #6f768d;
   }
-  
+
   .wrapper .search_box .search_field .fas{
     position: absolute;
     top: 10px;
@@ -326,7 +326,7 @@ h6 {
     color: #5078ef;
     cursor: pointer;
   }
-  
+
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #9fa3b1;
   }
@@ -341,4 +341,8 @@ h6 {
     margin-left: auto;
     margin-right: auto;
   }
-
+  tbody, td, tfoot, th, thead, tr{
+    border-color: #e4eefa
+    border-style: solid
+    border-width:10px
+  }

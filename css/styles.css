@@ -167,12 +167,3 @@ select{
     font-family: 'Ubuntu', sans-serif;
     color: #95060a;
 }
-.col-1-2{
-  width: 4%;
-}
-
-tbody, td, tfoot, th, thead, tr{
-  border-color: #e4eefa
-  border-style: solid
-  border-width:10px
-}
