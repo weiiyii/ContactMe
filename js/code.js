@@ -43,7 +43,6 @@ function doLogin()
 
 		saveCookie();
 
-		// NOT DIRECTING TO landing.html ??
 		window.location.href = "landing.html";
 	}
 	catch(err)
