@@ -49,7 +49,7 @@
 
 	function returnWithError()
 	{
-		$retValue = '{"results":['Empty'],"error":""}';
+		$retValue = '{"results":["Empty"],"error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 
