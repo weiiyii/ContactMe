@@ -400,7 +400,8 @@ h6 {
   #td_5::before, #td_6::before, #td_2::before, #td_3::before, #td_4::before {
     content: attr(data-title);
     font-weight: 600;
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.75em;
     color: rgba(5, 57, 94, .7);
     
   }
@@ -421,9 +422,9 @@ h6 {
     width: 100%;
     padding-right: 0;
     margin-right: 0;
-    font-size: 0.75em;
+  
     font-weight: bold;
-    
+    width: 80%;
   }
 
   /* td:nth-child(2) {
