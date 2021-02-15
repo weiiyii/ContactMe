@@ -228,7 +228,7 @@ function SearchContacts()
 				for( var i=0; i<jsonObject.results.length; i++ ){
 					// first name
 					if(i%5==0){
-						contactList += `<tr id="Table_Row_${row_cnt}">\n<td contenteditable='true' id = "td_0" data-title="First Name: ">${jsonObject.results[0]}</td>`;
+						contactList += `<tr id="Table_Row_${row_cnt}">\n<td contenteditable='true' id = "td_0" data-title="First Name: " scope="row">${jsonObject.results[0]}</td>`;
 						
 					}
 					i++;
