@@ -154,6 +154,7 @@ function doDelete(row){
 		{
 			if (this.readyState == 4 && this.status == 200)
 			{
+				window.location.href = "Search.html";
 				SearchContacts();
 			}
 		};
@@ -281,7 +282,7 @@ function SearchContacts()
 	}
 	catch(err)
 	{
-		document.getElementsById("contactList").innerHTML = "";
+		document.getElementsById("contactList").innerHTML = "Error";
 	}
 
 }
