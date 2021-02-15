@@ -248,9 +248,9 @@ function SearchContacts()
 					data-title="Date Created">${jsonObject.results[i]}</td>`;
 					
 					// delete
-					contactList += `<td id="td_5"><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>\n</tr>\n`;
+					contactList += `<td id="td_5"><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
 					// update
-					contactList += `<td id="id_6"><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${(((i+1)/6)-1)});"> Update </button></td>`;
+					contactList += `<td id="id_6"><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${(((i+1)/6)-1)});"> Update </button></td>\n</tr>\n`;
 
 					// update
 					// contactList += `<td >${jsonObject.results[i]}</td>\n</tr>\n`;
