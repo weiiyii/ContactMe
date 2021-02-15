@@ -600,5 +600,14 @@ h6 {
     padding: 10px;
   }
 
+  #addDiv
+  {
+    font-size: 30px;
+    width: 75%;
+    padding: 25px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+  }
+
 
 

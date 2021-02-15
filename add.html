@@ -57,7 +57,7 @@
 <header class="masthead" style="background-image: url(images/shoulder.jpg);">
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
+        <div class="row" style="height: 330px;">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h1>Add</h1>
@@ -66,29 +66,64 @@
             </div>
         </div>
     </div>
+
+	<div class="col-lg-8 col-md-10 mx-auto">
+		<div id="contactAddResult"></div>
+	</div>
+	
+	<div class="container text-center" >
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<!-- <div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Contact Info</h4> -->
+						<div class="container-fluid vertical-center">
+							<div class="container-fluid text-center" id="addDiv">
+								<h4 class="h3 mb-3">Contact Info</h4>
+						<span id="contactAddResult"></span>
+											<!-- <form onsubmit="return AddContacts()">
+						<input type="text" id="contactText_fname" placeholder="First Name" required>
+						<input type="text" id="contactText_lname" placeholder="Last Name" required>
+						<input type="email" id="contactText_email" placeholder="Email" required>
+						<input type="tel" id="contactText_phone" placeholder="Phone Number" required>
+						<br><br>
+						<button class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="submit" id="addContactButton"> Add Contact </button> -->
+										</form>
+										<form onsubmit="return AddContacts()">
+											<div class="row" style="padding-bottom: 10px;">
+												<div class="col">
+													<input type="text" class="form-control" id="contactText_fname" placeholder="First Name" required>
+												</div>
+											</div>
+											<div class="row" style="padding-bottom: 10px;">
+												<div class="col">
+													<input type="text"
+													class="form-control"  
+													id="contactText_lname" placeholder="Last Name" required>
+												</div>
+											</div>
+											<div class="row" style="padding-bottom: 10px;">
+												<div class="col">
+													<input type="email"
+													class="form-control"  
+													id="contactText_email" placeholder="Email" required>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col" style="padding-bottom: 20px;" >
+													<input type="tel"
+													class="form-control"  
+													id="contactText_phone" placeholder="Phone Number" required>
+												</div>
+											</div>
+								
+											<button class="w-50 btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="submit" >Add Contact</button>
+										</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
 
-<div class="col-lg-8 col-md-10 mx-auto">
-	<div id="contactAddResult"></div>
-</div>
 
-<div class="container text-center" >
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Contact Info</h4>
-                    <span id="contactAddResult"></span>
-										<form onsubmit="return AddContacts()">
-                    <input type="text" id="contactText_fname" placeholder="First Name" required>
-                    <input type="text" id="contactText_lname" placeholder="Last Name" required>
-                    <input type="email" id="contactText_email" placeholder="Email" required>
-                    <input type="tel" id="contactText_phone" placeholder="Phone Number" required>
-					<br><br>
-                    <button class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="submit" id="addContactButton"> Add Contact </button>
-									</form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
