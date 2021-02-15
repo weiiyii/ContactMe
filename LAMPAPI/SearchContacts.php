@@ -29,8 +29,7 @@
 				}
 				else
 				{
-					$searchResults .='"' . "EMPTY" . '"';
-					returnWithError($searchResults);
+					returnWithError();
 				}
 				$conn->close();
 	}
@@ -48,9 +47,9 @@
 		echo $obj;
 	}
 
-	function returnWithError($searchResults)
+	function returnWithError()
 	{
-		$retValue = '{"results":[' . $searchResults . '],"error":""}';
+		$retValue == '{"results":["EMPTY|NULL"],"error":""}';;
 		sendResultInfoAsJson( $retValue );
 	}
 

@@ -78,6 +78,7 @@ function doRegister()
 		var jsonObject = JSON.parse(xhr.responseText);
 
 		userId = jsonObject.id;
+		window.location.href = "index.html";
 
 		window.location = "index.html";
 	}
@@ -155,7 +156,7 @@ function doDelete(row){
 		{
 			if (this.readyState == 4 && this.status == 200)
 			{
-				window.location.href = "Search.html";
+				SearchContacts();
 			}
 		};
 		xhr.send(jsonPayload);
@@ -226,9 +227,11 @@ function SearchContacts()
 				// contactList += `<tr id="Table_Row_1">\n<td contenteditable='true' id = "td_0">${jsonObject.results[0]}</td>`;
 				var row_cnt = 1;
 				for( var i=0; i<jsonObject.results.length; i++ ){
-					if (jsonObject.results[i] == "Empty"){
+					if (jsonObject.results[0] == "EMPTY|NULL"){
 						var myObj = document.getElementById("contactList");
 						myObj.remove();
+						document.getElementById("contactSearchResult").innerHTML = "Contact(s) have not been found";
+						break;
 					}
 					// first name
 
