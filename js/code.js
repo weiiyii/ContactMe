@@ -229,6 +229,7 @@ function SearchContacts()
 					if (jsonObject.results[0] == "EMPTY|NULL"){
 						var myObj = document.getElementById("contactList");
 						myObj.remove();
+						document.getElementById("contactSearchResult").innerHTML = "Contact(s) have not been found";
 						break;
 					}
 					// first name
