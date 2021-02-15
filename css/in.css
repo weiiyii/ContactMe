@@ -348,9 +348,14 @@ h6 {
     -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5); */
   }
 
-  /* thead {
+  thead {
     display: none;
-  } */
+  }
+
+  tbody{
+    display: block;
+    width: 100%;
+  }
 
   tr{
     display: block;
@@ -387,7 +392,7 @@ h6 {
 
   /* fname, lname, delete, update */
   #td_0, #td_1, #td_5, #td_6 {
-    content: attr("First Name");
+    content: attr(data-title);
     font-weight: 600;
     font-size: 12px;
     color: rgba(5, 57, 94, .7);
@@ -403,7 +408,7 @@ h6 {
 
   /* email, phone, date */
   #td_2, #td_3, #td_4 {
-    content: attr("Email");
+    content: attr(data-title);
     font-weight: 600;
     font-size: 12px;
     color: rgba(5, 57, 94, .7);
