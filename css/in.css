@@ -426,7 +426,7 @@ h6 {
   }
 
   #td_6{
-    padding-left: 40px;
+    padding-left: 100px;
     text-align: center;
   }
   
@@ -435,8 +435,8 @@ h6 {
   #td_2, #td_3, #td_4 {
     float: left;
     width: 90%;
-    padding-right: 0;
-    padding-left: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
     margin-right: 0;
   
     
