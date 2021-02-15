@@ -29,7 +29,7 @@
 				}
 				else
 				{
-					returnWithInfo( "Empty" );
+					returnWithError();
 				}
 				$conn->close();
 	}
@@ -47,9 +47,9 @@
 		echo $obj;
 	}
 
-	function returnWithError($searchResults)
+	function returnWithError()
 	{
-		$retValue = '{"results":[' . $searchResults . '],"error":""}';
+		$retValue = '{"results":['Empty'],"error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 
