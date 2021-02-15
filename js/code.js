@@ -227,7 +227,7 @@ function SearchContacts()
 				var row_cnt = 1;
 				for( var i=0; i<jsonObject.results.length; i++ ){
 					// first name
-					if(i%7==0){
+					if(i%5==0){
 						contactList += `<tr id="Table_Row_${row_cnt}">\n<td contenteditable='true' id = "td_0" data-title="First Name">${jsonObject.results[0]}</td>`;
 						
 					}
