@@ -424,6 +424,10 @@ h6 {
     float: left;
     width: 45%;
   }
+
+  #td_5, #td_6{
+    text-align: center;
+  }
   
 
   /* email, phone, date */
