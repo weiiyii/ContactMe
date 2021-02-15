@@ -393,7 +393,8 @@ h6 {
   }
 
   /* fname, lname, delete, update */
-  #td_0::before, #td_1::before, #td_5::before, #td_6::before, #td_2::before, #td_3::before, #td_4::before {
+  /* #td_0::before, #td_1::before,  */
+  #td_5::before, #td_6::before, #td_2::before, #td_3::before, #td_4::before {
     content: attr(data-title);
     font-weight: 600;
     font-size: 12px;
@@ -404,6 +405,10 @@ h6 {
     font-weight: bold;
     background: transparentize( #58C25F, 0.9 );
     color: #58C25F; */
+  }
+
+  #td_0, #td_1{
+    font-size: 30px;
   }
 
   #td_0, #td_1, #td_5, #td_6{
