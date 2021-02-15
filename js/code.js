@@ -78,7 +78,7 @@ function doRegister()
 		var jsonObject = JSON.parse(xhr.responseText);
 
 		userId = jsonObject.id;
-		window.location.href = "index.html";
+		window.location = "index.html";
 	}
 
 	// else
