@@ -228,24 +228,24 @@ function SearchContacts()
 				for( var i=0; i<jsonObject.results.length; i++ ){
 					// first name
 					if(i%5==0){
-						contactList += `<tr id="Table_Row_${row_cnt}">\n<td contenteditable='true' id = "td_0" data-title="First Name">${jsonObject.results[0]}</td>`;
+						contactList += `<tr id="Table_Row_${row_cnt}">\n<td contenteditable='true' id = "td_0" data-title="First Name: ">${jsonObject.results[0]}</td>`;
 						
 					}
 					i++;
 					// last name
 					contactList += `<td contenteditable='true' id = "td_1" 
-					data-title="Last Name">${jsonObject.results[i]}</td>`;
+					data-title="Last Name: ">${jsonObject.results[i]}</td>`;
 					i++;
 					// email
-					contactList += `<td contenteditable='true' id = "td_2" data-title="Email">${jsonObject.results[i]}</td>`;
+					contactList += `<td contenteditable='true' id = "td_2" data-title="Email: ">${jsonObject.results[i]}</td>`;
 					i++;
 					// phone num
 					contactList += `<td contenteditable='true' id = "td_3" 
-					data-title="Phone Number">${jsonObject.results[i]}</td>`;
+					data-title="Phone Number: ">${jsonObject.results[i]}</td>`;
 					i++;
 					// date
 					contactList += `<td contenteditable='true' id = "td_4" 
-					data-title="Date Created">${jsonObject.results[i]}</td>`;
+					data-title="Date Created: ">${jsonObject.results[i]}</td>`;
 					
 					// delete
 					contactList += `<td id="td_5"><button type="button" id="deleteButton" class="btn btn-outline-primary" style="width: 80px border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;

@@ -356,7 +356,7 @@ h6 {
   tbody{
     display: block;
     width: 100%;
-    padding: 8px 16px;
+    padding: 0 16px;
   }
 
   tr{
@@ -365,6 +365,8 @@ h6 {
     margin-bottom: 16px;
     float: left;
     clear: both;
+    border-radius: 20px;
+    padding: 10px;
 
     
     /* background: #f2f2f2; */
