@@ -380,7 +380,7 @@ h6 {
   .wrapper .search_box{
     width: 500px;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 40px;
     height: 65px;
     display: flex;
     padding: 12px;
@@ -480,13 +480,17 @@ h6 {
     color: #9fa3b1;
   }
 
+  /* SEARCH BOX END */
+
+  /* SEARCH RESULT */
+
   #contactSearchResult {
     margin-top: 40px;
     text-align: center;
     
   }
 
-  .searchResult{
+  .searchResult, .front{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
