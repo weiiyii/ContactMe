@@ -340,6 +340,12 @@ h6 {
     color: #9fa3b1;
   }
 
+  #contactSearchResult {
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+  }
+
   .searchResult{
     width: 100%;
     margin-left: auto;
