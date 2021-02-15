@@ -225,7 +225,7 @@ function SearchContacts()
 				// contactList += `<tr id="Table_Row_1">\n<td contenteditable='true' id = "td_0">${jsonObject.results[0]}</td>`;
 				var row_cnt = 1;
 				for( var i=0; i<jsonObject.results.length; i++ ){
-					if (jsonObject.results[i] == "Empty"){
+					if (jsonObject.results[i] == "EMPTY|NULL"){
 						var myObj = document.getElementById("contactList");
 						myObj.remove();
 					}
