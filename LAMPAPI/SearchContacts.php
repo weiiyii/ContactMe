@@ -29,7 +29,7 @@
 				}
 				else
 				{
-					$searchResults .='"' . "EMPTY|NULL" . '"';
+					$searchResults ='{"results":["EMPTY|NULL"],"error":""}';
 					returnWithError($searchResults);
 				}
 				$conn->close();
