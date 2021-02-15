@@ -29,7 +29,7 @@
 				}
 				else
 				{
-					returnWithError( $searchResults );
+					returnWithInfo( $searchResults );
 				}
 				$conn->close();
 	}
