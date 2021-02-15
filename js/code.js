@@ -78,7 +78,8 @@ function doRegister()
 		var jsonObject = JSON.parse(xhr.responseText);
 
 		userId = jsonObject.id;
-		window.location = "index.html";
+		// window.location.href = "index.html";
+		window.location.assign("http://www.instacontact.live/index.html");
 	}
 
 	// else
