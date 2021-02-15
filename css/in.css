@@ -341,7 +341,7 @@ h6 {
   }
 
   #contactSearchResult {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     
   }
@@ -376,8 +376,8 @@ h6 {
     border-radius: 20px;
     padding-top: 20px;
     
-    background: #f2f2f2;
-    /* background-color: white; */
+    
+    background-color: white;
     box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
     -moz-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
     -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
@@ -419,7 +419,7 @@ h6 {
 
   #td_0, #td_1, #td_5, #td_6{
     float: left;
-    width: 50%;
+    width: 45%;
   }
   
 
