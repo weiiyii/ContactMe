@@ -362,14 +362,10 @@ h6 {
   tr{
     display: block;
     width: 100%;
-    margin-bottom: 32px;
-    margin-left: 32px;
+    margin-bottom: 16px;
     float: left;
     clear: both;
     border-radius: 20px;
-    padding: 10px;
-    
-
     
     /* background: #f2f2f2; */
 
@@ -390,11 +386,13 @@ h6 {
     font-size: 16px;
     font-weight: 700;
     color: rgba(5, 57, 94, 1);
-    /* margin: 0 0.5rem 0.5rem 0;
+    
+    
+    margin: 0 0.5rem 0.5rem 0;
     padding: 0.5rem;
     text-align: left;
     background-color: white;
-    border: 1px solid transparentize( #58C25F, 0.5 ); */
+    border: 1px solid transparentize( #58C25F, 0.5 );
   }
 
   /* fname, lname, delete, update */
