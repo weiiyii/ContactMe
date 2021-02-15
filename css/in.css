@@ -343,9 +343,9 @@ h6 {
     margin-left: auto;
     margin-right: auto;
     box-shadow: none;
-    /* box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
+    box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
     -moz-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
-    -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5); */
+    -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
   }
 
   thead {
@@ -355,15 +355,17 @@ h6 {
   tbody{
     display: block;
     width: 100%;
+    padding: 0 16px;
   }
 
   tr{
     display: block;
+    width: 100%;
     margin-bottom: 16px;
     float: left;
     clear: both;
 
-    padding: 0 16px;
+    
     /* background: #f2f2f2; */
 
     box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
@@ -391,13 +393,11 @@ h6 {
   }
 
   /* fname, lname, delete, update */
-  #td_0::before, #td_1::before, #td_5::before, #td_6::before {
+  #td_0::before, #td_1::before, #td_5::before, #td_6::before, #td_2::before, #td_3::before, #td_4::before {
     content: attr(data-title);
     font-weight: 600;
     font-size: 12px;
     color: rgba(5, 57, 94, .7);
-    float: left;
-    width: 50%;
     /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
     padding: 0.625rem 0.5rem 0.625rem;
     font-size: 0.75em;
@@ -406,12 +406,14 @@ h6 {
     color: #58C25F; */
   }
 
+  #td_0, #td_1, #td_5, #td_6{
+    float: left;
+    width: 50%;
+  }
+  
+
   /* email, phone, date */
   #td_2, #td_3, #td_4 {
-    content: attr(data-title);
-    font-weight: 600;
-    font-size: 12px;
-    color: rgba(5, 57, 94, .7);
     float: left;
     width: 100%;
     /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;

@@ -255,6 +255,8 @@ function SearchContacts()
 					// update
 					// contactList += `<td >${jsonObject.results[i]}</td>\n</tr>\n`;
 
+					row_cnt++;
+
 					// if((i+1)%6==0){
 					// 	contactList += `<td><button type="button" id="deleteButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="doDelete(${jsonObject.results[i]});"> Delete </button></td>`;
 					// 	contactList += `<td><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${(((i+1)/6)-1)});"> Update </button></td>`;
