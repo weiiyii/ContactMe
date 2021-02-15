@@ -415,7 +415,7 @@ h6 {
     
   }
 
-  #td_0, #td_1{
+  #td_0, #td_1, #td_5, #td_6{
     font-size: 30px;
     text-align: center;
   }
@@ -425,9 +425,9 @@ h6 {
     width: 45%;
   }
 
-  #td_5, #td_6{
+  /* #td_5, #td_6{
     text-align: center;
-  }
+  } */
   
 
   /* email, phone, date */
@@ -435,11 +435,12 @@ h6 {
     float: left;
     width: 90%;
     padding-right: 0;
+    padding-left: 20px;
     margin-right: 0;
   
     
     font-weight: bold;
-    width: 100%;
+    
   }
 
 
