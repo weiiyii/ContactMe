@@ -244,7 +244,7 @@ function SearchContacts()
 					data-title="Phone Number: ">${jsonObject.results[i]}</td>`;
 					i++;
 					// date
-					contactList += `<td contenteditable='true' id = "td_4"
+					contactList += `<td id = "td_4"
 					data-title="Date Created: ">${jsonObject.results[i]}</td>`;
 					i++;
 
