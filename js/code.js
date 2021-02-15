@@ -289,11 +289,10 @@ function SearchContacts()
 }
 
 function updateContact(php_row,row){
-	i = (row*6)
-	var newFname = document.getElementById(`td_${i}`).innerHTML;
-	var newLname = document.getElementById(`td_${i+1}`).innerHTML;
-	var newEmail = document.getElementById(`td_${i+2}`).innerHTML;
-	var newPhone = document.getElementById(`td_${i+3}`).innerHTML;
+	var newFname = document.getElementById(`Table_Row_${row}`).cells[0].innerHTML;
+	var newLname = document.getElementById(`Table_Row_${row}`).cells[1].innerHTML;
+	var newEmail = document.getElementById(`Table_Row_${row}`).cells[2].innerHTML;
+	var newPhone = document.getElementById(`Table_Row_${row}`).cells[3].innerHTML;
 	document.getElementById("contactSearchResult").innerHTML = "";
 
 	var jsonPayload = '{"FirstName" : "' + newFname + '","LastName" : "' + newLname + '","Email" : "' + newEmail + '","Number" : "' + newPhone + '", "ID" : ' + php_row + '}';
