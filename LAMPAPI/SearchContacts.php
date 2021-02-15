@@ -29,7 +29,6 @@
 				}
 				else
 				{
-					$searchResults ="EMPTY|NULL";
 					returnWithError($searchResults);
 				}
 				$conn->close();
@@ -50,7 +49,7 @@
 
 	function returnWithError($searchResults)
 	{
-		$retValue = $searchResults;
+		$retValue = '{"results":["EMPTY|NULL"],"error":""}';;
 		sendResultInfoAsJson( $retValue );
 	}
 
