@@ -281,7 +281,7 @@ function SearchContacts()
 	}
 	catch(err)
 	{
-		document.getElementById("contactSearchResult").innerHTML = "No Contacts with this Field";
+		document.getElementsByTagName("table")[0].innerHTML = contactList;
 	}
 
 }
