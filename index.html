@@ -21,7 +21,7 @@
 	<div class="container-fluid text-center" id="loginDiv">
 		<h3 class="h3 mb-3">Login</h3>
 		<span id="loginResult"></span>
-		<form onsubmit="return doLogin()">
+		<form>
 			<div class="row">
 				<div class="col">
 					<input type="text" class="form-control" id="loginName" placeholder="Login" required>
@@ -32,7 +32,7 @@
 					<input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
 				</div>
 			</div>
-			<button class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="submit" id="submit">Login</button>
+			<button class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="submit" onclick="return doLogin()">Login</button>
 		</form>
 		<a href="register.html" style="font-size:15px; color: rgb(56, 53, 53)">Register Now</a>
 	</div>
