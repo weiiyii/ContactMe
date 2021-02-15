@@ -21,7 +21,7 @@
         <div class="container-fluid text-center" id="registerDiv">
             <h3 class="h3 mb-3">Register</h3>
 
-            <form class="registerForm" onsubmit="return doRegister()">
+            <form class="registerForm" onsubmit="return !!(doRegister() & window.location.href = 'index.html';)">
                 <div class="row">
                     <div class="col">
                         <input type="text" class="form-control" id="fname" placeholder="First Name" required>
@@ -47,7 +47,7 @@
                     </div>
 
                 </div>
-                <button class="w-25 btn btn-outline-primary" onclick="window.location.href = 'index.html';" style="border: 2px solid; font-weight:500" type="submit";>Register</button>
+                <button class="w-25 btn btn-outline-primary" style="border: 2px solid; font-weight:500" type="submit";>Register</button>
             </form>
             <a href="index.html" style="font-size:15px; color: rgb(56, 53, 53)" >Back to login</a>
         </div>
