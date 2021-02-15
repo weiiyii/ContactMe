@@ -29,7 +29,7 @@
 				}
 				else
 				{
-					$searchResults .='"' . "EMPTY";
+					$searchResults .='"' . "EMPTY" . '"';
 					returnWithError($searchResults);
 				}
 				$conn->close();
