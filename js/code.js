@@ -79,6 +79,7 @@ function doRegister()
 
 		userId = jsonObject.id;
 
+		window.location = "index.html";
 	}
 
 	// else
