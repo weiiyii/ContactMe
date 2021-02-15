@@ -433,22 +433,14 @@ h6 {
   /* email, phone, date */
   #td_2, #td_3, #td_4 {
     float: left;
-    width: 100%;
+    width: 90%;
     padding-right: 0;
     margin-right: 0;
   
-    text-align: center;
+    
     font-weight: bold;
     width: 100%;
   }
 
-  /* td:nth-child(2) {
-    float: left;
-    margin: -0.5rem 0.5rem -0.5rem -0.5rem;
-    padding: 0.625rem 0.5rem 0.625rem;
-    font-size: 0.75em;
-    font-weight: bold;
-    background: transparentize( #58C25F, 0.9 );
-    color: #58C25F;
-  } */
+
 
