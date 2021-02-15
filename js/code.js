@@ -281,7 +281,7 @@ function SearchContacts()
 	}
 	catch(err)
 	{
-		document.getElementsByTagName("table")[0].innerHTML = contactList;
+		document.getElementsById("contactList").innerHTML = "";
 	}
 
 }
