@@ -419,12 +419,11 @@ h6 {
   #td_2, #td_3, #td_4 {
     float: left;
     width: 100%;
-    margin: -0.5rem 0.5rem -0.5rem -0.5rem;
-    padding: 0.625rem 0.5rem 0.625rem;
+    padding-right: 0;
+    margin-right: 0;
     font-size: 0.75em;
     font-weight: bold;
-    background: transparentize( #58C25F, 0.9 );
-    color: #58C25F;
+    
   }
 
   /* td:nth-child(2) {
