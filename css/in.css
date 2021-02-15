@@ -399,7 +399,7 @@ h6 {
     float: left;
     font-size: 16px;
     font-weight: 700;
-    color: #fff
+    color: #fff;
     
     margin: 0 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem;
@@ -432,7 +432,7 @@ h6 {
 
   #td_0, #td_1, #td_5, #td_6{
     float: left;
-    width: 45%;
+    width: 50%;
   }
 /* 
   #td_5, #td_6{
