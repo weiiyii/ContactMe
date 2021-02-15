@@ -17,6 +17,8 @@ h6 {
 
 .card {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     /* justify-content: center; */
     width: 25rem;
     background-color: rgb(241, 97, 14);
@@ -431,15 +433,14 @@ h6 {
     
   }
 
-  #td_0, #td_1, #td_5, position: absolute; right: 0;#td_6{
+  #td_0, #td_1, #td_5, #td_6{
     float: left;
     width: 47%;
   }
 
   #td_5{
   
-    position: absolute; 
-    right: 0;
+    position: absolute; right: 0;
   }
   
 
