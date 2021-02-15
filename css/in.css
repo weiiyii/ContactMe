@@ -391,7 +391,7 @@ h6 {
   }
 
   /* fname, lname, delete, update */
-  #td_0, #td_1, #td_5, #td_6 {
+  #td_0::before, #td_1::before, #td_5::before, #td_6::before {
     content: attr(data-title);
     font-weight: 600;
     font-size: 12px;
