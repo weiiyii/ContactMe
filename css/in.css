@@ -344,6 +344,7 @@ h6 {
     margin-left: auto;
     margin-right: auto;
     box-shadow: none;
+    background-color: white;
     /* box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
     -moz-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5);
     -webkit-box-shadow: 0px 4px 20px rgba(5, 57, 94, .5); */
@@ -390,7 +391,6 @@ h6 {
     
     margin: 0 0.5rem 0.5rem 0;
     padding: 0.5rem;
-    text-align: left;
     background-color: white;
     border: 1px solid transparentize( #58C25F, 0.5 );
   }
