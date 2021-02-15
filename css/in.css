@@ -413,7 +413,7 @@ h6 {
     font-weight: 600;
     /* font-size: 12px; */
     font-size: 0.75em;
-    color: rgba(5, 57, 94, .7);
+    color: rgba(10, 46, 71, 0.7);
     
   }
 
@@ -428,6 +428,7 @@ h6 {
 
   #td_1{
     text-align: left;
+    overflow: hidden;
   }
 
   #td_0, #td_1, #td_5, #td_6{
