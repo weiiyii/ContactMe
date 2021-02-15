@@ -155,7 +155,6 @@ function doDelete(row){
 			if (this.readyState == 4 && this.status == 200)
 			{
 				window.location.href = "Search.html";
-				SearchContacts();
 			}
 		};
 		xhr.send(jsonPayload);
