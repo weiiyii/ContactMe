@@ -29,7 +29,7 @@
 				}
 				else
 				{
-					returnWithError( "No Records Found" );
+					returnWithError( $searchResults );
 				}
 				$conn->close();
 	}
@@ -47,7 +47,7 @@
 		echo $obj;
 	}
 
-	function returnWithError( $err )
+	function returnWithError($searchResults)
 	{
 		$retValue = '{"results":[' . $searchResults . '],"error":""}';
 		sendResultInfoAsJson( $retValue );
