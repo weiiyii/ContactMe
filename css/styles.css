@@ -24,6 +24,15 @@ body
   opacity: 0.8;
 }
 
+.site-heading {
+    padding: 200px 0 150px;
+    color: white;
+    position: relative;
+    opacity: 80%;
+    font-size: 42px;
+    
+  }
+
 #registerDiv
 {
   /* font-size: 30px; */
