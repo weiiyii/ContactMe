@@ -386,13 +386,11 @@ h6 {
     float: left;
     font-size: 16px;
     font-weight: 700;
-    color: rgba(5, 57, 94, 1);
+    color: black;
     
-    
-    margin: 0 0.5rem 0.5rem 0;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem;
     background-color: white;
-    border: 1px solid transparentize( #58C25F, 0.5 );
   }
 
   /* fname, lname, delete, update */
