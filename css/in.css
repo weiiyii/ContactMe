@@ -362,11 +362,13 @@ h6 {
   tr{
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    margin-left: 32px;
     float: left;
     clear: both;
     border-radius: 20px;
     padding: 10px;
+    
 
     
     /* background: #f2f2f2; */
