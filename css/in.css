@@ -419,7 +419,6 @@ h6 {
 
   #td_0, #td_1, #td_5, #td_6{
     font-size: 30px;
-    white-space: nowrap;
     
   }
 
@@ -434,7 +433,7 @@ h6 {
 
   #td_0, #td_1, #td_5, #td_6{
     float: left;
-    width: 50%;
+    width: 49%;
   }
 /* 
   #td_5, #td_6{
