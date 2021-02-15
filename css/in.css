@@ -2,7 +2,7 @@ body {
     font-size: 20px;
     color: #212529;
     font-family: 'Lora', 'Times New Roman', serif;
-    background-color: white;
+    background-color: black;
 }
 
 h1,
@@ -364,7 +364,7 @@ h6 {
   tr{
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
     float: left;
     clear: both;
     border-radius: 20px;
@@ -402,12 +402,7 @@ h6 {
     font-weight: 600;
     font-size: 12px;
     color: rgba(5, 57, 94, .7);
-    /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
-    padding: 0.625rem 0.5rem 0.625rem;
-    font-size: 0.75em;
-    font-weight: bold;
-    background: transparentize( #58C25F, 0.9 );
-    color: #58C25F; */
+    
   }
 
   #td_0, #td_1{
@@ -424,12 +419,12 @@ h6 {
   #td_2, #td_3, #td_4 {
     float: left;
     width: 100%;
-    /* margin: -0.5rem 0.5rem -0.5rem -0.5rem;
+    margin: -0.5rem 0.5rem -0.5rem -0.5rem;
     padding: 0.625rem 0.5rem 0.625rem;
     font-size: 0.75em;
     font-weight: bold;
     background: transparentize( #58C25F, 0.9 );
-    color: #58C25F; */
+    color: #58C25F;
   }
 
   /* td:nth-child(2) {
