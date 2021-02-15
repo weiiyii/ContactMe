@@ -252,6 +252,8 @@ function SearchContacts()
 					// update
 					contactList += `<td id="id_6"><button type="button" id="updateButton" class="btn btn-outline-primary" style="border: 2px solid; font-weight:500" onclick="updateContact(${jsonObject.results[i]},${(((i+1)/6)-1)});"> Update </button></td>\n</tr>\r\n`;
 
+					i++;
+
 					// update
 					// contactList += `<td >${jsonObject.results[i]}</td>\n</tr>\n`;
 
