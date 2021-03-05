@@ -1,6 +1,6 @@
 # InstaContact
 
-A contact manager that users can manage their list of contacts.
+InstaContact is a contact manager app that helps users to manage their list of contacts.
 
 Created by 
 
