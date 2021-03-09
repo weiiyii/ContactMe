@@ -2,6 +2,8 @@
 
 InstaContact is a contact manager app that helps users to manage their list of contacts.
 
+Link for the app: http://www.instacontact.live/
+
 Created by 
 
 Austin Raynor  
